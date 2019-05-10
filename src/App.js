@@ -1,25 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import MediaQuery from 'react-responsive';
 
-function App() {
+import AppWrapper from './AppWrapper'
+
+const DEVICE_BREAKPOINT = 992;
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppWrapper>
+      <MediaQuery maxWidth={DEVICE_BREAKPOINT - 1}>
+        mobile
+      </MediaQuery>
+      <MediaQuery minWidth={DEVICE_BREAKPOINT}>
+        desktop
+      </MediaQuery>
+    </AppWrapper>
   );
 }
 
