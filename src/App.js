@@ -2,6 +2,8 @@ import React from 'react';
 import MediaQuery from 'react-responsive';
 
 import AppWrapper from './AppWrapper'
+import Desktop from './desktop/Main'
+
 
 const DEVICE_BREAKPOINT = 992;
 
@@ -12,7 +14,7 @@ const App = () => {
         mobile
       </MediaQuery>
       <MediaQuery minWidth={DEVICE_BREAKPOINT}>
-        desktop
+        <Desktop />
       </MediaQuery>
     </AppWrapper>
   );
