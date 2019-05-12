@@ -6,6 +6,7 @@ const StyledCloseIcon = styled(FontAwesomeIcon)`
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  cursor: pointer;
 `
 
 export default StyledCloseIcon

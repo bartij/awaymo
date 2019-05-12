@@ -6,10 +6,15 @@ import StyledCloseIcon from './StyledCloseIcon'
 
 import HeaderWrapper from './HeaderWrapper'
 
-const Header = () =>
-  <HeaderWrapper>
-    <StyledLogo src={logo} alt='' />
-    <StyledCloseIcon icon="times" />
-  </HeaderWrapper>
+const Header = () => {
+  const handleClose = () => {}
+
+  return (
+    <HeaderWrapper>
+      <StyledLogo src={logo} alt='' />
+      <StyledCloseIcon icon="times" onClick={handleClose} />
+    </HeaderWrapper>
+  )
+}
 
 export default Header
