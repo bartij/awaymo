@@ -11,7 +11,8 @@ import {
   faLifeRing,
   faPhone,
   faSignOutAlt,
-  faInfoCircle
+  faInfoCircle,
+  faQuestionCircle,
 } from '@fortawesome/free-solid-svg-icons'
 
 library.add(
@@ -23,6 +24,7 @@ library.add(
   faPhone,
   faSignOutAlt,
   faInfoCircle,
+  faQuestionCircle,
 )
 
 ReactDOM.render(<App />, document.getElementById('root'));

@@ -15,7 +15,7 @@ const LINKS = [
   { text: 'Support', path: '/somepath', icon: 'life-ring' },
   { text: 'Contact Us', path: '/somepath', icon: 'phone' },
   { text: 'Log Out', path: '/somepath', icon: 'sign-out-alt' },
-  { text: 'About', path: '/somepath', icon: 'info-circle' },
+  { text: 'About', path: '/somepath', icon: 'question-circle' },
   { text: 'FAQ', path: '/somepath', icon: 'info-circle' },
 ];
 
