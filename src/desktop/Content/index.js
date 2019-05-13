@@ -4,6 +4,7 @@ import ContentWrapper from './ContentWrapper';
 import NavMenu from '../NavMenu';
 import LeftMenuWrapper from './LeftMenuWrapper';
 import RightMenuWrapper from './RightMenuWrapper';
+import CenterSectionWrapper  from './CenterSectionWrapper';
 import ProfileInfo from '../ProfileInfo';
 
 const LEFT_TOP_LINKS = [{ text: 'Home', path: '/somepath' }, { text: 'Flights', path: '/somepath' }];
@@ -27,12 +28,12 @@ const Content = () =>
       <NavMenu links={LEFT_TOP_LINKS} />
       <NavMenu links={LEFT_BOTTOM_LINKS} />
     </LeftMenuWrapper>
-    <div>
+    <CenterSectionWrapper>
       <ProfileInfo />
       <RightMenuWrapper>
         <NavMenu links={RIGHT_LINKS} />
       </RightMenuWrapper>
-    </div>
+    </CenterSectionWrapper>
   </ContentWrapper>
 
 export default Content

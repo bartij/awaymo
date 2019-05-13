@@ -14,6 +14,15 @@ import {
   faInfoCircle
 } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faTimes)
+library.add(
+  faTimes,
+  faUserCircle,
+  faPlane,
+  faCreditCard,
+  faLifeRing,
+  faPhone,
+  faSignOutAlt,
+  faInfoCircle,
+)
 
 ReactDOM.render(<App />, document.getElementById('root'));
